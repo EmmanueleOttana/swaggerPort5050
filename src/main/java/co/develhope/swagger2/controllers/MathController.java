@@ -10,11 +10,6 @@ public class MathController{
 
     ArithmeticOperation division = new ArithmeticOperation("Division",2,"num1 diviso num2 = risultato",new String[]{"['num1','num2','risultato']"});
 
-    @GetMapping
-    public String welcomeMathMsg(){
-        return "Welcome!";
-    }
-
     @GetMapping("division-info")
     public String infoDivision(){
         return division.getDescription();
